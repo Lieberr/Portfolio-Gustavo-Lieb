@@ -30,7 +30,7 @@ const Footer = () => {
                     {/*Navegation*/}
 
                     <div>
-                        <h3 className="section-title">Quick Navegation</h3>
+                        <h3 className="section-title">Quick Navigation</h3>
                         <ul className="nav-list">
                             <li>
                                 <button>
@@ -72,28 +72,28 @@ const Footer = () => {
                             <a href="https://github.com/Lieberr"
                             target="_blank"
                             className="icon"
-                            rel=""><RiGithubLine size={25} /></a>
+                            rel=""><RiGithubLine color="black" size={22} /></a>
 
 
                             <a href="https://www.linkedin.com/in/gustavo-lieb-figueira/"
                             target="_blank"
                             className="icon"
-                            rel=""><SlSocialLinkedin size={25} /></a>
+                            rel=""><SlSocialLinkedin color="black" size={22} /></a>
 
 
                             <a href="mailto:gustavoliebfigueira@gmail.com"
                             target="_blank"
                             className="icon"
-                            rel=""><MdOutlineMail size={25} /></a>
+                            rel=""><MdOutlineMail color="black" size={22} /></a>
 
                             <a href="https://www.instagram.com/gustavo.lieb/"
                             target="_blank"
                             className="icon"
-                            rel=""><FaInstagram size={25} /></a>
+                            rel=""><FaInstagram color="black" size={22} /></a>
                         </div>
                         <p className="collab">
                             Sempre aberto para{' '}
-                            <span className="collab-span">novos projetos</span> e
+                            <span className="collab-span">novos projetos</span> e{' '}
                             <span className="collab-span">colaborações</span>.
                         </p>
                     </div>
@@ -102,11 +102,11 @@ const Footer = () => {
                     <div className="dowloads">
                         <h4 className="dowload-title">Dowloads</h4>
                         <div className="dowloads-link">
-                            <button className="dowload-btn"> <FiDownload /> Standard Resume (PT)</button>
+                            <button className="dowload-btn"> <FiDownload color="black" /> Standard Resume (PT)</button>
                             <span className="span-separator-dowload">•</span>
-                            <button className="dowload-btn"> <FiDownload /> Standard Resume (EN)</button>
+                            <button className="dowload-btn"> <FiDownload color="black" /> Standard Resume (EN)</button>
                             <span className="span-separator-dowload">•</span>
-                            <button className="dowload-btn"> <FiDownload /> International Resume</button>
+                            <button className="dowload-btn"> <FiDownload color="black" /> International Resume</button>
                         </div>
                     </div>
 
