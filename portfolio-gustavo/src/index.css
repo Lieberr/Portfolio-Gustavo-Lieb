@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -41,7 +41,7 @@ body.dark .footer{
 .footer-name{
     font-size: 1.25rem;
     font-weight: 600;
-    color: #26b4ab;
+    color: #1f3197;
     margin-bottom: 1rem;
 }
 
@@ -93,7 +93,7 @@ body.dark .nav-list button{
 }
 
 .nav-list button:hover{
-    color: #4ecdc4;
+    color: #1f3197;
 }
 
 .social-icons{
@@ -116,7 +116,8 @@ body.dark .social-icons a{
 }
 
 .social-icons a:hover{
-    border-color: rgba(78, 205, 196, 0.5);
+    border-color: #1f3197;
+    transition: 0.3s ease;
 }
 
 .collab{
@@ -128,7 +129,8 @@ body.dark .collab{
 }
 
 .collab span{
-    color: #26b4ab
+    color: #1f3197;
+    font-weight: 600;
 }
 
 .dowloads{
@@ -175,7 +177,8 @@ body.dark .downloads-link button{
 }
 
 .dowloads-link button:hover{
-    color: #4ecdc4;
+    color: #1f3197;
+    transition: 0.3s ease;
 }
 
 .footer-bottom{
@@ -216,13 +219,23 @@ body.dark .footer-bottom p{
     align-items: center;
     gap: 0.5rem;
     font-size: 0.85rem;
-    color: #26b4ab;
+    color: #1f3197;
     transition: color 0.3s;
 }
 
 .scroll-to-top:hover{
-    color: #0d948b;
+    color: #121d58;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -230,6 +243,7 @@ body.dark .footer-bottom p{
 
 
 /*Contact*/
+
 
 .contact-section{
     padding: 5rem 1rem;
@@ -255,8 +269,18 @@ body.dark .footer-bottom p{
     margin-bottom: 1rem;
 }
 
+.contact-header h2::after{
+    content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background-color: #000000;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
 .contact-header span{
-    color: #4ecdc4;
+    color: #1f3197;
 }
 
 .contact-header p{
@@ -311,9 +335,9 @@ body.dark .footer-bottom p{
 
 .contact-icon{
     padding: 0.5rem;
-    background: rgba(78,205,196,0.1);
+    background: #1f3197;
     border-radius: 0.5rem;
-    color: #4ecdc4;
+    color: white;
 }
 
 
@@ -340,7 +364,7 @@ color: #e5e7eb;
 }
 
 .contact-value:hover{
-    color: #4ecdc4;
+    color: #1f3197;
 }
 
 .container-social{
@@ -379,20 +403,20 @@ color: #e5e7eb;
 }
 
 .container-social-links a:hover{
-    border-color: rgba(78, 205, 196, 0.5);
+    border-color: #1f3197;
 }
 
 .container-info-box{
     padding: 1.1rem;
     border-radius: 0.75rem;
-    background: linear-gradient(135deg, rgba(78,205,196,0.1), transparent);
-    border: 1px solid rgba(78,205,196,0.3);
+    background: #f9fafb;
+    border: 1px solid rgba(146, 158, 157, 0.3);
     margin-top: 24px;
     
 }
 
 .container-info-box h4{
-        color: #4ecdc4;
+        color: #1f3197;
     margin-bottom: 0.5rem;
 }
 
@@ -450,13 +474,13 @@ textarea::placeholder{
 
 .form-contact input:focus,
 .form-contact textarea:focus{
-    border-color: #3dcfc6;
-    box-shadow: 0 0 0 2px rgba(43, 202, 192, 0.3);
+    border-color: #1f3197;
+    box-shadow: 0 0 0 2px rgba(26, 55, 150, 0.3);
 }
 
 .contact-btn{
     padding: 1.1rem;
-    background: #4ecdc4;
+    background: #1f3197;
     border: none;
     border-radius: 0.75rem;
     font-weight: 500;
@@ -467,9 +491,10 @@ textarea::placeholder{
     gap: 0.5rem;
     transition: 0.3s;
     font-size: 16px;
+    color: white;
 }
 
 .contact-btn:hover{
-    background: #3db8b0;
+    background: #182675;
     }
 

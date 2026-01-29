@@ -17,6 +17,35 @@ import { LuAsterisk } from "react-icons/lu";
 
 
 const Contact = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+
+    })
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Formaulario enviado: ', formData);
+        alert("Entraremos em contato em Breve !")
+        setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+        })
+    }
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        })
+        
+    }
+
     return ( 
         <section id="contact" className="contact-section">
             <div className="contact-container">
@@ -28,7 +57,7 @@ const Contact = () => {
                 viewport={{once: true}}
                 transition={{duration: 0.6}}
                 className="contact-header">
-                    <h2>Let's <span>Talk</span> </h2>
+                    <h2 className="title-lets-talk">Let's <span>Talk</span> </h2>
                     <p>
                         Vamos conversar sobre seu proximo projeto
                     </p>
@@ -89,8 +118,8 @@ const Contact = () => {
                             <h3 className="title-social">Connect with me</h3>
 
                             <div className="container-social-links">
-                                <a href="" target="_blank"><RiGithubLine size={20}/> GitHub </a>
-                                <a href="" target="_blank"><SlSocialLinkedin size={20} /> LinkedIn</a>
+                                <a href="https://github.com/Lieberr" target="_blank"><RiGithubLine size={20}/> GitHub </a>
+                                <a href="https://www.linkedin.com/in/gustavo-lieb-figueira/" target="_blank"><SlSocialLinkedin size={20} /> LinkedIn</a>
 
                             </div>
 
@@ -100,7 +129,7 @@ const Contact = () => {
 
                         <div className="container-info-box">
                             <div style={{display: "flex", gap: "10px"}}>
-                                <GoLightBulb size={35} color="#4ecdc4" />
+                                <GoLightBulb size={35} color="#1f3197" />
                                 <div>
                                     <h4>Interessado em colaboração?</h4>
                                     <p>Estou sempre aberto para discutir projetos interessantes, oportunidades de trabalho ou simplesmente trocar ideias sobre tecnologia.</p>
@@ -121,25 +150,25 @@ const Contact = () => {
                         <h3 className="title-contact-message">Send a Message</h3>
                         <p className="p-contact-message">Preencha o formulário abaixo e eu retornarei o mais breve possível.</p>
 
-                        <form className="form-contact">
+                        <form onSubmit={handleSubmit} className="form-contact">
                             <div>
                                 <label htmlFor="name">Name <LuAsterisk color="red" size={12} /></label>
-                                <input type="text" name="name" placeholder="Your full name" required />
+                                <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your full name" required />
                             </div>
 
                             <div>
                                 <label htmlFor="email">Email <LuAsterisk color="red" size={12} /></label>
-                                <input type="email" name="email" placeholder="your@email.com" required/>
+                                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="your@email.com" required/>
                             </div>
                             
                             <div>
                                 <label htmlFor="subject">Subject <LuAsterisk color="red" size={12} /></label>
-                                 <input type="text" name="subject" placeholder="What would you like to talk about" required />
+                                 <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="What would you like to talk about" required />
                             </div>
 
                             <div>
                                 <label htmlFor="message">Message <LuAsterisk color="red" size={12} /></label>
-                                <textarea name="message" rows="6" placeholder="Tell me more about your project or ideia" required />
+                                <textarea name="message" rows="6" value={formData.message} onChange={handleChange} placeholder="Tell me more about your project or ideia" required />
                             </div>
 
                             <motion.button type="submit"
