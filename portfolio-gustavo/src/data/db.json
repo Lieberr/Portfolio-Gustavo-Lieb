@@ -21,7 +21,7 @@
             "technologies": [
                 "React.JS", 
                 "JavaScript (ES6+)", 
-                "Css", 
+                "Tailwind CSS", 
                 "CoinGecko API", 
                 "Vite",
                 "Proxy",
@@ -53,7 +53,7 @@
                 "React.JS", 
                 "Context API", 
                 "JavaScript (ES6+)", 
-                "Css", 
+                "Tailwind CSS", 
                 "JSON Server",
                 "LocalStorage",
                 "Vite",
