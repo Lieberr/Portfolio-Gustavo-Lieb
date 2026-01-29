@@ -226,3 +226,243 @@ body.dark .footer-bottom p{
 
 
 
+
+/*Contact*/
+
+.contact-section{
+    padding: 5rem 1rem;
+    background: linear-gradient(to bottom, #f9fafb, #ffffff);
+    transition: background 0.3s ease;
+}
+
+.dark .contact-section{
+    background: linear-gradient(to bottom, #0a0e1a, #0d1117);
+}
+
+.contact-container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.contact-header{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-header h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-header span{
+    color: #4ecdc4;
+}
+
+.contact-header p{
+    font-size: 1.2rem;
+    color: #6b7280;
+}
+
+.dark .contact-header p{
+    color: #9ca3af;
+}
+
+
+.contact-grid{
+    display: grid;
+    gap: 3rem;
+}
+
+@media(min-width: 1024px){
+    .contact-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.p-contact-info{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 18px;
+    padding-top: 11px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-card{
+    display: flex;
+    gap: 1rem;
+    padding: 1.3rem;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    margin-bottom: 24px;
+    
+}
+
+.dark .contact-card{
+    background: rgba(31,41,55,0.5);
+    border-color: #374151;  
+}
+
+.contact-icon{
+    padding: 0.5rem;
+    background: rgba(78,205,196,0.1);
+    border-radius: 0.5rem;
+    color: #4ecdc4;
+}
+
+
+.contact-card p{
+    margin: 0;
+}
+
+.contact-label{
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.dark .contact-label{
+    color: #9ca3af;
+}
+
+.contact-value{
+    color: #1f2933;
+    text-decoration: none;
+}
+
+.dark .contact-value {
+color: #e5e7eb;
+}
+
+.contact-value:hover{
+    color: #4ecdc4;
+}
+
+.container-social{
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+}
+
+.dark .container-social{
+    background: rgba(31, 41, 55, 0.5);
+    border-color: #374151;
+}
+
+.container-social-links{
+    display: flex;
+    gap: 16px;
+}
+
+.container-social-links a{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    background: #ffffff;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.dark .container-social-links a{
+    background: rgba(17, 24, 39, 0.5);
+    border-color: #374151;
+}
+
+.container-social-links a:hover{
+    border-color: rgba(78, 205, 196, 0.5);
+}
+
+.container-info-box{
+    padding: 1.1rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, rgba(78,205,196,0.1), transparent);
+    border: 1px solid rgba(78,205,196,0.3);
+    margin-top: 24px;
+    
+}
+
+.container-info-box h4{
+        color: #4ecdc4;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-contact label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+.dark .form-contact label{
+    color: #d1d5db;
+}
+
+.form-contact textarea,
+.form-contact input{
+    width: 100%;
+    padding: 1.1rem 1rem;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.dark .form-contact textarea,
+.dark .form-contact input{
+        background: rgba(17,24,39,0.5);
+    border-color: #374151;
+    color: #f9fafb;
+}
+
+.form-contact input:focus,
+.form-contact textarea:focus{
+    border-color: #3dcfc6;
+    box-shadow: 0 0 0 2px rgba(43, 202, 192, 0.3);
+}
+
+.contact-btn{
+    padding: 1.1rem;
+    background: #4ecdc4;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.contact-btn:hover{
+    background: #3db8b0;
+    }
+

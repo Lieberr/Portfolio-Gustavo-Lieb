@@ -28,7 +28,7 @@ const Contact = () => {
                 className="contact-header">
                     <h2>Let's <span>Talk</span> </h2>
                     <p>
-                        Estou sempre aberto para discutir novas oportunidades e projetos interessantes
+                        Vamos conversar sobre seu proximo projeto
                     </p>
                 </motion.div>
 
@@ -70,7 +70,7 @@ const Contact = () => {
                             </div>
 
                             <div className="contact-card">
-                                <div className="contact-cion">
+                                <div className="contact-icon">
                                     <LuBriefcase size={20}/>
                                 </div>
                                 <div>
@@ -88,18 +88,17 @@ const Contact = () => {
 
                             <div className="container-social-links">
                                 <a href="" target="_blank"><RiGithubLine size={20}/> GitHub </a>
+                                <a href="" target="_blank"><SlSocialLinkedin size={20} /> LinkedIn</a>
+
                             </div>
 
-                            <div className="container-social-links">
-                                <a href="" target="_blank"><SlSocialLinkedin size={20} /> LinkedIn</a>
-                            </div>
                         </div>
 
                         {/*Info box*/}
 
                         <div className="container-info-box">
                             <div style={{display: "flex", gap: "10px"}}>
-                                <GoLightBulb />
+                                <GoLightBulb size={35} color="#4ecdc4" />
                                 <div>
                                     <h4>Interessado em colaboração?</h4>
                                     <p>Estou sempre aberto para discutir projetos interessantes, oportunidades de trabalho ou simplesmente trocar ideias sobre tecnologia.</p>
