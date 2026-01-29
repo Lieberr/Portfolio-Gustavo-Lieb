@@ -304,6 +304,13 @@ body.dark .footer-bottom p{
     }
 }
 
+.title-contact-info,
+.title-contact-message{
+    font-weight: 600;
+}
+
+
+
 .p-contact-info{
     font-size: 16px;
     font-weight: 300;
@@ -357,6 +364,8 @@ body.dark .footer-bottom p{
 .contact-value{
     color: #1f2933;
     text-decoration: none;
+    padding-top: 9px;
+    display: block;
 }
 
 .dark .contact-value {
