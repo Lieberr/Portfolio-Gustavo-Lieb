@@ -7,6 +7,8 @@ import { RiGithubLine } from "react-icons/ri";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { GoLightBulb } from "react-icons/go";
 import { LuSend } from "react-icons/lu";
+import { LuAsterisk } from "react-icons/lu";
+
 
 
 
@@ -121,22 +123,22 @@ const Contact = () => {
 
                         <form className="form-contact">
                             <div>
-                                <label htmlFor="name">Name *</label>
+                                <label htmlFor="name">Name <LuAsterisk color="red" size={12} /></label>
                                 <input type="text" name="name" placeholder="Your full name" required />
                             </div>
 
                             <div>
-                                <label htmlFor="email">Email *</label>
+                                <label htmlFor="email">Email <LuAsterisk color="red" size={12} /></label>
                                 <input type="email" name="email" placeholder="your@email.com" required/>
                             </div>
                             
                             <div>
-                                <label htmlFor="subject">Subject *</label>
+                                <label htmlFor="subject">Subject <LuAsterisk color="red" size={12} /></label>
                                  <input type="text" name="subject" placeholder="What would you like to talk about" required />
                             </div>
 
                             <div>
-                                <label htmlFor="message">Message *</label>
+                                <label htmlFor="message">Message <LuAsterisk color="red" size={12} /></label>
                                 <textarea name="message" rows="6" placeholder="Tell me more about your project or ideia" required />
                             </div>
 
