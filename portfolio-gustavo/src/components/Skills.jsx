@@ -105,6 +105,8 @@ const Skills = () => {
 
                                 {/*Skills*/}
 
+                                
+
                                 <div className="skill-list">
                                     {category.skills.map((skill) => (
                                         <div key={skill.name} className="skill-item">
