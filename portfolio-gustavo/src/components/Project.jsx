@@ -138,7 +138,7 @@ const Project = () => {
 
                                 {/*actions*/}
 
-                                <div className="project-action">
+                                <div className="project-actions">
 
                                     {project.githubURL && (
                                         <motion.a
@@ -146,8 +146,8 @@ const Project = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn btn-secondary"
-                                        whileHover={{scale: 1.05}}
-                                        whileTap={{scale: 0.95}}>
+                                        whileHover={{scale: 1.02}}
+                                        whileTap={{scale: 0.98}}>
                                             <LuGithub size={14}/>
                                             GitHub
                                         </motion.a>
@@ -159,8 +159,8 @@ const Project = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn btn-primary"
-                                        whileHover={{scale: 1.05}}
-                                        whileTap={{scale: 0.95}}>
+                                        whileHover={{scale: 1.02}}
+                                        whileTap={{scale: 0.98}}>
                                             <MdOutlineRemoveRedEye size={14}/>
                                             Demo
                                         </motion.a>
@@ -172,8 +172,8 @@ const Project = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn btn-outline"
-                                        whileHover={{scale: 1.05}}
-                                        whileTap={{scale: 0.95}}>
+                                        whileHover={{scale: 1.02}}
+                                        whileTap={{scale: 0.98}}>
 
                                         </motion.a>
                                     )}
