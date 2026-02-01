@@ -8,6 +8,15 @@ import { motion } from "motion/react";
 
 
 const Home = () => {
+
+    const scrollToSection = (sectionID) => {
+        const element = document.getElementById(sectionID);
+
+        if(element){
+            element.scrollIntoView({behavior: 'smooth'});
+        }
+    }
+
     return ( 
         <section id="home" className="home-section">
             <div home-container>
@@ -79,6 +88,7 @@ const Home = () => {
                     animate={{opacity: 1, y: 0}}
                     transition={{delay: 0.9}}>
                         <motion.button
+                        onClick={() => scrollToSection('projects')}
                         className="home-btn-primary"
                         whileHover={{scale: 1.03}}
                         whileTap={{scale: 0.96}}>
@@ -86,6 +96,7 @@ const Home = () => {
                         </motion.button>
 
                         <motion.button
+                        onClick={() => scrollToSection('contact')}
                         className="home-btn-outline"
                         whileHover={{scale: 1.03}}
                         whileTap={{scale: 0.96}}>
@@ -101,15 +112,15 @@ const Home = () => {
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay: 1.1}}>
-                        <a href="" target="_blank">
+                        <a href="https://github.com/Lieberr" target="_blank">
                             <FiGithub />
                         </a>
 
-                        <a href="" target="_blank">
+                        <a href="https://www.linkedin.com/in/gustavo-lieb-figueira/" target="_blank">
                             <SlSocialLinkedin />
                         </a>
 
-                        <a href="" target="_blank">
+                        <a onClick={() => scrollToSection('contact')}>
                             <MdMailOutline />
                         </a>
                     </motion.div>
