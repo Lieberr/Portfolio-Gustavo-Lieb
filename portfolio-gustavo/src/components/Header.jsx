@@ -9,13 +9,24 @@ const Header = () => {
         {id: 'contact', label: 'Contact'},
     ];
 
+
+
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element){
+            element.scrollIntoView({behavior: 'smooth'})
+        }
+    }
+
+
+
     return ( 
         <header className="header">
             <nav className="header-container">
 
                 {/*Logo*/}
 
-                <button className="logo-area">
+                <button className="logo-area" onClick={() => scrollToSection('home')}>
                     <span>Gustavo Lieb</span>
                 </button>
 
@@ -24,6 +35,7 @@ const Header = () => {
                 <div className="desktop-menu">
                     {menuItens.map((item) => (
                         <button
+                        onClick={() => scrollToSection(item.id)}
                         key={item.id}>
                             {item.label}
                         </button>
