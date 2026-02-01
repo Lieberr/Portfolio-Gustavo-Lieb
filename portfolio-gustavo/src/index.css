@@ -117,7 +117,7 @@ body.dark .social-icons a{
 
 .social-icons a:hover{
     border-color: #1f3197;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .collab{
@@ -153,12 +153,14 @@ body.dark .dowloads{
     flex-wrap: wrap;
     gap: 0.5rem;
     font-size: 0.85rem;
+    align-items: center;
     
 }
 
 .span-separator-dowload{
     color: #aeb2b9;
     font-size: 25px;
+
 }
 
 .dowloads-link a{
@@ -169,14 +171,16 @@ body.dark .dowloads{
     font-weight: 600;
     font-size: 14px;
     transition: color 0.3;
+    text-decoration: none;
 }
+
 
 
 body.dark .downloads-link button{
     color: #9ca3af;
 }
 
-.dowloads-link button:hover{
+.dowloads-link a:hover{
     color: #1f3197;
     transition: 0.3s ease;
 }
@@ -1677,6 +1681,97 @@ textarea::placeholder{
 
 .scroll-down:hover {
   color: #1f3197;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: #0f172a;
+  color: #fff;
+
+  width: 320px;
+  padding: 16px 18px;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  animation: slideIn 0.4s ease;
+  z-index: 9999;
+}
+
+.toast-content strong {
+  font-size: 1rem;
+}
+
+.toast-content p {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #cbd5f5;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.toast-close:hover {
+  opacity: 0.7;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 

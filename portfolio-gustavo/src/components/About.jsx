@@ -34,7 +34,7 @@ const About = () => {
     ]
 
     return ( 
-        <section id="sobre" className="sobre-section">
+        <section id="about" className="sobre-section">
             <div className="sobre-container">
 
                 {/*Header*/}
