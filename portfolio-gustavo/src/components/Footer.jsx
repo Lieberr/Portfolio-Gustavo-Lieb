@@ -102,9 +102,9 @@ const Footer = () => {
                     <div className="dowloads">
                         <h4 className="dowload-title">Dowloads</h4>
                         <div className="dowloads-link">
-                            <button className="dowload-btn"> <FiDownload color="black" /> Standard Resume (PT)</button>
+                            <a href="/cv-gustavo.pdf" download="CV-Gustavo-lieb.pdf" className="dowload-btn"> <FiDownload color="black" /> Standard Resume (PT)</a>
                             <span className="span-separator-dowload">•</span>
-                            <button className="dowload-btn"> <FiDownload color="black" /> Standard Resume (EN)</button>
+                            <a className="dowload-btn"> <FiDownload color="black" /> Standard Resume (EN)</a>
                             <span className="span-separator-dowload">•</span>
                             <button className="dowload-btn"> <FiDownload color="black" /> International Resume</button>
                         </div>
