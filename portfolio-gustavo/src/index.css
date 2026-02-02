@@ -656,6 +656,10 @@ textarea::placeholder{
             height: 100%;
             overflow: hidden;
             border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .resume-image{
@@ -1596,8 +1600,8 @@ textarea::placeholder{
   padding: 2rem 1.5rem;
   background: rgba(255, 255, 255, 0.527);
   border-radius: 10px;
-  border: 1px solid #374151;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #3741513b;
+  box-shadow: 0 4px 20px rgba(33, 20, 148, 0.08);
   backdrop-filter: blur(6px);
   max-width: 400px;
 }

@@ -3,8 +3,10 @@ import { FaRegFileAlt } from "react-icons/fa";
 import { FaRegFilePdf } from "react-icons/fa";
 import { RiGlobalLine } from "react-icons/ri";
 import { FiDownload } from 'react-icons/fi';
-import { use, useState } from "react";
+import { useState } from "react";
 import Toast from "./Toast";
+import { PiReadCvLogo } from "react-icons/pi";
+
 
 
 
@@ -85,14 +87,7 @@ const Resume = () => {
                         <div className="resume-preview">
 
                             <div className="preview-container">
-                                <img 
-                                src={
-                                    selectLanguage === 'pt' ?
-                                    '/print cv.png' :
-                                    'cv ingles-preview.png'
-                                }
-                                alt="Preview do Curriculo"
-                                className="resume-image"/>
+                                <PiReadCvLogo color="gray" size={200} />
                             </div>
 
                         </div>
