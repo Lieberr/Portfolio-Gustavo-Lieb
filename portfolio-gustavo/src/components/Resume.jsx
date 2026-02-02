@@ -21,6 +21,15 @@ const Resume = () => {
     }
 
 
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element){
+            element.scrollIntoView({behavior: 'smooth'})
+        }
+    }
+
+
+
 
     const [selectLanguage, setSelectLanguage] = useState('pt')
 
@@ -74,27 +83,19 @@ const Resume = () => {
                         {/*Previw*/}
 
                         <div className="resume-preview">
-                            <div className="preview-column">
-                                <div className="preview-line line-lg"></div>
-                                <div className="preview-line line-md"></div>
-                                <div className="preview-line line-md"></div>
-                                <div className="preview-line line-sm"></div>
 
-                                <div className="preview-divider"></div>
-
-                                
-                                    <div className="preview-line line-lg"></div>
-                                    <div className="preview-line line-md"></div>
-                                    <div className="preview-line line-md"></div>
-                                    <div className="preview-line line-sm"></div>
-
-                                    <div className="preview-footer">
-                                        <FaRegFilePdf size={40} color="gray" />
-                                        <span style={{color: 'gray'}}>PDF Preview</span>
-                                    </div>
-                                </div>
-                                
+                            <div className="preview-container">
+                                <img 
+                                src={
+                                    selectLanguage === 'pt' ?
+                                    '/print cv.png' :
+                                    'cv ingles-preview.png'
+                                }
+                                alt="Preview do Curriculo"
+                                className="resume-image"/>
                             </div>
+
+                        </div>
 
                         <p className="resume-description">Versão completa e detalhada do meu currículo, com background profissional, projetos e habilidades técnicas.</p>
 
@@ -208,7 +209,7 @@ const Resume = () => {
                 transition={{duration: 0.6, delay: 0.3}}>
                     <p>
                         💡 Currículos podem estar desatualizados. Para informações mais recentes sobre minha experiência e projetos,{' '}
-                        <a href="" style={{fontWeight: '600'}}>entre em contato.</a>
+                        <a onClick={() => scrollToSection('contact')} style={{fontWeight: '600'}}>entre em contato.</a>
                     </p>
                 </motion.div>
             </div>
