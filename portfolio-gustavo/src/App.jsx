@@ -1,25 +1,21 @@
-import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-import Project from './components/Project';
-import Skills from './components/Skills';
-import About from './components/About';
-import Home from './components/Home';
-import Header from './components/Header';
-
+import HomePage from "./pages/HomePage";
+import {Routes, Route} from "react-router"
+import Header from "./components/Header";
+import ProjectDetailsPage from "./pages/ProjectDetails";
+import PageNotFound from "./pages/NotFound";
 
 const App = () => {
   return (
     <>
-    <Header />
-    <Home />
-    <About />
-    <Skills />
-    <Project />
-    <Resume />
-    <Contact />
-    <Footer />
+      <Header />
+      <Routes>
+        <Route path="/" element={ <HomePage /> } />
+        <Route path="/projects/:id" element={<ProjectDetailsPage />} />
+        <Route path="*" element={ <PageNotFound /> } />
+      </Routes>
+    
     </>
+
   );
 }
  
