@@ -345,7 +345,7 @@ body.dark .footer-bottom p{
 }
 
 .contact-icon{
-    padding: 0.5rem;
+    padding: 0.7rem;
     background: #1f3197;
     border-radius: 0.5rem;
     color: white;
@@ -398,6 +398,11 @@ color: #e5e7eb;
     gap: 16px;
 }
 
+.title-social{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 .container-social-links a{
     display: flex;
     align-items: center;
@@ -433,6 +438,7 @@ color: #e5e7eb;
         color: #1f3197;
     margin-bottom: 0.5rem;
 }
+
 
 
 input::placeholder,

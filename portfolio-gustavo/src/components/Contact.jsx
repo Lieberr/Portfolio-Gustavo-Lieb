@@ -26,16 +26,31 @@ const Contact = () => {
 
     })
 
-    const handleSubmit = (e) => {
+    async function handleSubmit(e) {
         e.preventDefault();
-        console.log('Formaulario enviado: ', formData);
-        alert("Entraremos em contato em Breve !")
-        setFormData({
-            name: '',
-            email: '',
-            subject: '',
-            message: ''
-        })
+
+        try{
+            const response = await fetch('http://localhost:3333/send-email', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+            if(response.ok){
+                alert("Entraremos em contato em Breve !")
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+            });
+            } else{
+                alert("Erro ao enviar mensagem")
+            }
+        } catch(err){
+            alert("Servidor fora do ar")
+        }
     }
 
     const handleChange = (e) => {
@@ -86,7 +101,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="contact-label">Email</p>
-                                    <a href="" className="contact-value">Gustavoliebfigueira@gmail.com</a>
+                                    <a href="mailto:gustavoliebfigueira@gmail.com" className="contact-value">Gustavoliebfigueira@gmail.com</a>
                                 </div>
                             </div>
 
@@ -132,7 +147,7 @@ const Contact = () => {
                                 <GoLightBulb size={35} color="#1f3197" />
                                 <div>
                                     <h4>Interessado em colaboração?</h4>
-                                    <p>Estou sempre aberto para discutir projetos interessantes, oportunidades de trabalho ou simplesmente trocar ideias sobre tecnologia.</p>
+                                    <p style={{fontSize: '15px'}}>Estou sempre aberto para discutir projetos interessantes, oportunidades de trabalho ou simplesmente trocar ideias sobre tecnologia.</p>
                                 </div>
                             </div>
                         </div>
