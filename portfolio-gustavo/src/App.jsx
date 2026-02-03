@@ -3,16 +3,22 @@ import {Routes, Route} from "react-router"
 import Header from "./components/Header";
 import ProjectDetailsPage from "./pages/ProjectDetails";
 import PageNotFound from "./pages/NotFound";
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
     <>
+    <div className="app-container">
       <Header />
-      <Routes>
-        <Route path="/" element={ <HomePage /> } />
-        <Route path="/projects/:id" element={<ProjectDetailsPage />} />
-        <Route path="*" element={ <PageNotFound /> } />
-      </Routes>
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={ <HomePage /> } />
+          <Route path="/projects/:id" element={<ProjectDetailsPage />} />
+          <Route path="*" element={ <PageNotFound /> } />
+        </Routes>
+      </main>
+      <Footer />
+      </div>
     
     </>
 
