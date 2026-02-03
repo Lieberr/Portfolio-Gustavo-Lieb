@@ -1033,6 +1033,10 @@ textarea::placeholder{
     gap: 0.5rem;
 }
 
+.project-actions a {
+    text-decoration: none;
+}
+
 .btn{
     flex: 1;
     padding: 0.5rem;
@@ -1049,6 +1053,19 @@ textarea::placeholder{
     margin-top: 15px;
 
 }
+
+.btn-saiba-mais{
+    background-color: white;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid rgba(114, 114, 114, 0.253);
+}
+
+.btn-saiba-mais:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+
 
 
 .btn-primary{
@@ -1075,6 +1092,7 @@ textarea::placeholder{
     border: 1px solid #d1d5db;
     color: #111827;
 }
+
 
 
 

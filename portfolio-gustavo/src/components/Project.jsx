@@ -4,7 +4,7 @@ import { LuGithub } from "react-icons/lu";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RiInformationLine } from "react-icons/ri";
 import { motion } from "motion/react";
-import { delay } from "motion";
+import { Link } from "react-router";
 
 
 
@@ -12,6 +12,8 @@ const Project = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const MotionLink = motion(Link);
+
 
     useEffect(() => { 
         const fetchProjects = async () => {
@@ -177,6 +179,15 @@ const Project = () => {
 
                                         </motion.a>
                                     )}
+
+                                    <MotionLink 
+                                    whileHover={{scale: 1.02}}
+                                    whileTap={{scale: 0.98}}
+                                    to={`projects/${project.id}`}
+                                    className="btn btn-saiba-mais">                                
+                                            <RiInformationLine size={14}/>
+                                            Saiba Mais
+                                    </MotionLink>
 
                                 </div>
                             </motion.div>
