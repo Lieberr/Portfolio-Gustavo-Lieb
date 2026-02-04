@@ -30,7 +30,7 @@ const Contact = () => {
         e.preventDefault();
 
         try{
-            const response = await fetch('http://localhost:3333/send-email', {
+            const response = await fetch('/api/send-email', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
