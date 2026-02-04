@@ -5,6 +5,7 @@
   padding: 6rem 1rem 5rem;
 }
 
+
 .project_container {
   max-width: 64rem;
   margin: 0 auto;
@@ -73,6 +74,12 @@
   margin-bottom: 1.5rem;
 }
 
+@media(max-width: 768px){
+    .icon_project{
+        padding: 0.6rem;
+    }
+}
+
 .icon_project{
   color: #ffffff;
 }
@@ -125,6 +132,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 3rem;
+  justify-content: flex-start;
 }
 
 .btn_outline,
@@ -139,6 +147,7 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 
 .btn_outline {
   background: #e5e5e5;
@@ -325,7 +334,7 @@
 
 @media (max-width: 640px) {
   .project_page {
-    padding: 4rem 0.5rem 3rem;
+    padding: 6rem 0.5rem 3rem;
   }
 
   .project_title {
@@ -334,11 +343,15 @@
 
   .action_buttons {
     flex-direction: column;
+    display: flex;
+    width: 100%;
   }
 
   .btn_outline,
   .btn_primary {
     width: 100%;
+    display: flex;
+    max-width: 100%;
     justify-content: center;
   }
 }
