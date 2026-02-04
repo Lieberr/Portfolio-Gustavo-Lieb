@@ -1,3 +1,5 @@
+import { useNavigate, useLocation } from "react-router";
+
 const Header = () => {
 
     const menuItens = [
@@ -18,6 +20,27 @@ const Header = () => {
         }
     }
 
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const goToSection = (sectionId) => {
+        if(location.pathname !== '/'){
+            navigate('/');
+
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({behavior: 'smooth'})
+                }
+            }, 100)
+        } else{
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({behavior: 'smooth'})
+            } 
+        }
+    }
+
 
 
     return ( 
@@ -26,7 +49,7 @@ const Header = () => {
 
                 {/*Logo*/}
 
-                <button className="logo-area" onClick={() => scrollToSection('home')}>
+                <button className="logo-area" onClick={() => goToSection('home')}>
                     <span>Gustavo Lieb</span>
                 </button>
 
@@ -35,7 +58,7 @@ const Header = () => {
                 <div className="desktop-menu">
                     {menuItens.map((item) => (
                         <button
-                        onClick={() => scrollToSection(item.id)}
+                        onClick={() => goToSection(item.id)}
                         key={item.id}>
                             {item.label}
                         </button>
