@@ -12,7 +12,7 @@ const Project = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const MotionLink = motion(Link);
+    const MotionLink = motion.create(Link);
 
 
     useEffect(() => { 
