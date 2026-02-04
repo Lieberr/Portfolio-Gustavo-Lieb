@@ -1,6 +1,13 @@
 import { useNavigate, useLocation } from "react-router";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
+import { IoClose } from "react-icons/io5";
+
+
 
 const Header = () => {
+
+    const [mobileMenu, setMobileMenu] = useState(false);
 
     const menuItens = [
         {id: 'home', label: 'Home'},
@@ -45,25 +52,60 @@ const Header = () => {
 
     return ( 
         <header className="header">
-            <nav className="header-container">
+            <nav className="nav">
+                <div className="nav_content">
 
-                {/*Logo*/}
+                    {/*Logo*/}
 
-                <button className="logo-area" onClick={() => goToSection('home')}>
-                    <span>Gustavo Lieb</span>
-                </button>
+                    <button className="logo_button" onClick={() => goToSection('home')}>
+                        <span>Gustavo Lieb</span>
+                    </button>
 
-                {/*Desktop menu*/}
+                    {/*Desktop menu*/}
 
-                <div className="desktop-menu">
-                    {menuItens.map((item) => (
+                    <div className="desktop_menu">
+                        {menuItens.map((item) => (
+                            <button
+                            className="menu_item"
+                            onClick={() => goToSection(item.id)}
+                            key={item.id}>
+                                {item.label}
+                            </button>
+                        ))}
+                    </div>
+
+
+                    {/*Mobile menu*/}
+
+                    <div className="mobile_controls">
                         <button
-                        onClick={() => goToSection(item.id)}
-                        key={item.id}>
-                            {item.label}
+                        onClick={() => setMobileMenu(!mobileMenu)}
+                        className="mobile_menu_button">
+                            {mobileMenu ? <IoClose size={24} /> : <RxHamburgerMenu size={24} />}
                         </button>
-                    ))}
+                    </div>
+
+
+
                 </div>
+
+
+
+
+                {mobileMenu && (
+                    <div className="monile_menu">
+                        <div className="mobile_menu_content">
+                            {menuItens.map((item) => (
+                                <button
+                                key={item.id}
+                                onClick={() => scrollToSection(item.id)}
+                                className="mobile_menu_item">
+                                    {item.label}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </nav>
         </header>
      );

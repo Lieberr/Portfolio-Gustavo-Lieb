@@ -168,19 +168,9 @@ const Project = () => {
                                         </motion.a>
                                     )}
 
-                                    {project.learnMoreUrl && (
-                                        <motion.a
-                                        href={project.learnMoreUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="btn btn-outline"
-                                        whileHover={{scale: 1.02}}
-                                        whileTap={{scale: 0.98}}>
-
-                                        </motion.a>
-                                    )}
 
                                     <MotionLink 
+                                    onClick={() => window.scrollTo(0, 0)}
                                     whileHover={{scale: 1.02}}
                                     whileTap={{scale: 0.98}}
                                     to={`projects/${project.id}`}

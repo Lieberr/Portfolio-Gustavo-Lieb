@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 import { motion } from "motion/react";
 import { GoArrowLeft } from "react-icons/go";
 import { GiProcessor } from "react-icons/gi";
@@ -20,8 +20,30 @@ import styles from "../styles/ProjectDetails.module.css"
 
 const ProjectDetailsPage = () => {
 
-    const {id} = useParams();
+
     const navigate = useNavigate();
+    const location = useLocation();
+
+    const goToSection = (sectionId) => {
+        if(location.pathname !== '/'){
+            navigate('/');
+
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({behavior: 'smooth'})
+                }
+            }, 100)
+        } else{
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({behavior: 'smooth'})
+            } 
+        }
+    };
+
+    const {id} = useParams();
+
 
     const [project, setProject] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -66,7 +88,7 @@ const ProjectDetailsPage = () => {
                 {/*VOLTAR*/}
 
                 <motion.button
-                onClick={() => navigate('/')}
+                onClick={() => goToSection('projects')}
                 initial={{opacity: 0, x: -20}}
                 animate={{opacity: 1, x: 0}}
                 className={styles.back_button}>
@@ -252,15 +274,16 @@ const ProjectDetailsPage = () => {
             className={styles.cta_footer}>
                 <p className={styles.cta_description}>Gostou deste projeto? Confira meus outros trabalhos!</p>
 
-                <Link to="/#projects">
+                
                         <motion.button
+                        onClick={() => goToSection('projects')}
                         whileHover={{scale: 1.02}}
                         whileTap={{scale: 0.98}}
                         className={styles.btn_footer}>
                             <GoArrowLeft size={18}/>
                             <span>Ver todos os projetos</span>
                         </motion.button>
-                </Link>
+                
             </motion.div>
             </div>
         </div>

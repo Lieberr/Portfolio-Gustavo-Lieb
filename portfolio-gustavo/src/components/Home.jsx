@@ -3,6 +3,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { MdMailOutline } from "react-icons/md";
 import { FaArrowDown } from "react-icons/fa6";
 import { motion } from "motion/react";
+import styles from "../styles/Home.module.css"
 
 
 
@@ -17,132 +18,142 @@ const Home = () => {
         }
     }
 
-    return ( 
-        <section id="home" className="home-section">
-            <div home-container>
-                <div className="home-content">
-
-                    {/*text*/}
-
+    return (
+        <section id="home" className={styles.home_section}>
+            <div className={styles.container}>
+                <div className={styles.grid}>
+                    {/*Left side*/}
+                    <div className={styles.content}>
                     <motion.div
-                    className="home-text"
-                    initial={{opacity: 0, y: 20}}
-                    whileInView={{opacity: 1, y: 0}}
-                    viewport={{once: true}}
-                    transition={{duration: 0.6}}>
-                        <h1>Hello, I'm</h1>
-                        <h2>Gustavo Lieb</h2>
-
-                    <motion.div
-                    className="home-role"
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{delay: 0.3}}>
-                        <span>⚡</span>
-                        Software Engineer
-                    </motion.div>   
-
-
-                    </motion.div>
-
-                    {/*Profile card*/}
-
-                    <motion.div
-                    className="profile-card"
-                    initial={{opacity: 0, scale: 0.0}}
-                    animate={{opacity: 1, scale: 1}}
-                    transition={{delay: 0.5}}
-                    whileHover={{scale: 1.02}}>
-                        <div className="profile-image-wrapper">
-                            <img src="/images/profile-img.jpg" alt="Profile" />
-                            <div className="status-dot"></div>
-                        </div>
-
-                        <div className="profile-info">
-                            <p className="profile-name">Gustavo Lieb Figueira</p>
-                            <p className="profile-job">Software Engineering</p>
-
-                            <div className="profile-status">
-                                <p>Voluntario</p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-
-                    {/*Descricao*/}
-
-                    <motion.p
-                    className="home-description"
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{delay: 0.7}}>
-                        Apaixonado por Frontend, Banco de dados e construção de Software.
-                        Transformando ideias em sistemas inteligentes que impactam muitos usuários.
-                    </motion.p>
-
-                    {/*botoes*/}
-
-                    <motion.div
-                    className="home-btns"
+                    className={styles.home_text}
                     initial={{opacity: 0, y: 20}}
                     animate={{opacity: 1, y: 0}}
-                    transition={{delay: 0.9}}>
+                    transition={{duration: 0.6, delay: 0.2}}>
+                        <motion.p
+                        className={styles.subtitle}
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{delay: 0.3}}>
+                            <span className={styles.subtitle_accent}>⚡</span>
+                            Software Engineer
+                        </motion.p>
+                        <h1 className={styles.main_title}>
+                            Hi, I'm
+                        </h1>
+                        <h2 className={styles.name_title}>
+                            Gustavo Lieb
+                        </h2>
+                    </motion.div>
+
+                    {/*Description*/}
+
+                    <motion.p
+                    className={styles.description}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{delay: 0.5}}>
+                        Apaixonado por Frontend, Banco de dados & backend. Transformando ideias em sistemas inteligentes que impactam milhares de usuários.
+                    </motion.p>
+
+                    {/*btns*/}
+                    <motion.div
+                    className={styles.cta_buttons}
+                    initial={{opacity: 0, y: 20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{delay: 0.7}}>
                         <motion.button
                         onClick={() => scrollToSection('projects')}
-                        className="home-btn-primary"
+                        className={styles.btn_outline}
                         whileHover={{scale: 1.03}}
-                        whileTap={{scale: 0.96}}>
+                        whileTap={{scale: 0.97}}>
                             Ver Projetos
                         </motion.button>
 
                         <motion.button
                         onClick={() => scrollToSection('contact')}
-                        className="home-btn-outline"
+                        className={styles.btn_primary}
                         whileHover={{scale: 1.03}}
-                        whileTap={{scale: 0.96}}>
+                        whileTap={{scale: 0.97}}>
                             Entre em Contato
                         </motion.button>
                     </motion.div>
 
 
-                    {/*Social*/}
+                    {/*Social icons*/}
 
                     <motion.div
-                    className="home-social"
+                    className={styles.social_icons}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
-                    transition={{delay: 1.1}}>
-                        <a href="https://github.com/Lieberr" target="_blank">
-                            <FiGithub />
-                        </a>
+                    transition={{delay: 0.9}}>
+                        <motion.a
+                        href="https://github.com/Lieberr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.social_link}
+                        whileHover={{scale: 1.1, y: -2}}
+                        whileTap={{scale: 0.97}}>
+                            <FiGithub size={20} className={styles.social_icon}/>
+                        </motion.a>
 
-                        <a href="https://www.linkedin.com/in/gustavo-lieb-figueira/" target="_blank">
-                            <SlSocialLinkedin />
-                        </a>
+                        <motion.a
+                        href="https://www.linkedin.com/in/gustavo-lieb-figueira/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.social_link}
+                        whileHover={{scale: 1.1, y: -2}}
+                        whileTap={{scale: 0.97}}>
+                            <SlSocialLinkedin size={20} className={styles.social_icon}/>
+                        </motion.a>
 
-                        <a onClick={() => scrollToSection('contact')}>
-                            <MdMailOutline />
-                        </a>
+                        <motion.a
+                        href="mailto:gustavoliebfigueira@gmail.com"                        rel="noopener noreferrer"
+                        className={styles.social_link}
+                        whileHover={{scale: 1.1, y: -2}}
+                        whileTap={{scale: 0.97}}>
+                            <MdMailOutline size={20} className={styles.social_icon}/>
+                        </motion.a>
                     </motion.div>
-                    
-                    {/*Scroll*/}
-
-                    <motion.button
-                    className="scroll-down"
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{delay: 1.3}}>
-                        <motion.div
-                        animate={{y: [0, 10, 0]}}
-                        transition={{duration: 1.5, repeat: Infinity}}>
-                            <FaArrowDown size={24} />
-                        </motion.div>
-                    </motion.button>
-
                 </div>
+
+                {/*Profile img right side*/}
+                <motion.div
+                initial={{opacity: 0, x: 50}}
+                animate={{opacity: 1, x: 0}}
+                className={styles.image_container}>
+                    <div className={styles.image_wrapper}>
+                        <motion.img
+                        src="/images/profile-img.jpg"
+                        alt="Profile"
+                        className={styles.profile_image}
+                        whileHover={{scale: 1.02}}
+                        transition={{duration: 0.3}} />
+                    </div>
+                </motion.div>
+                </div>
+
+                {/*Scroll*/}
+
+                <motion.button
+                className={styles.scroll_container}
+                onClick={() => scrollToSection('about')}
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{delay: 1.1}}>
+                    <motion.div
+                    animate={{y: [0, 10, 0]}}
+                    className={styles.scoll_icon}
+                    transition={{duration: 1.5, repeat: Infinity}}>
+                        <FaArrowDown color="gray" size={32}/>
+                    </motion.div>
+                </motion.button>
+
+                
+
             </div>
         </section>
-     );
+    )
+        
 }
  
 export default Home;
