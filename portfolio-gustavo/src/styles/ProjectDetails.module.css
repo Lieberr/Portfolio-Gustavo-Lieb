@@ -1,0 +1,344 @@
+/* Project Page Container */
+.project_page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f9fafb, #ffffff);
+  padding: 6rem 1rem 5rem;
+}
+
+.project_container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Not Found */
+.not_found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.not_found h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.not_found a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.not_found a:hover {
+  text-decoration: underline;
+}
+
+/* Back Button */
+.back_button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #19191a;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+  padding: 0;
+}
+
+.back_button:hover {
+  color: #1f3197;
+}
+
+/* Icon Project */
+.project_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: -25px;
+
+}
+.icon_project {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem;
+  background: #1f3197;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon_project{
+  color: #ffffff;
+}
+
+/* Category Badge */
+.category {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.category span {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: rgba(232, 236, 236, 0.2);
+  color: #1f3197;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #1f3197c5;
+  margin-left: 1rem;
+}
+
+/* Title */
+.project_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: rgb(15, 15, 15);
+  line-height: 1.1;
+}
+
+/* Subtitle */
+.project_subtitle {
+  font-size: 1.25rem;
+  color: #1f3197;
+  margin-bottom: 1.5rem;
+}
+
+/* Description */
+.project_description {
+  font-size: 1rem;
+  color: #45484d;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Action Buttons */
+.action_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.btn_outline,
+.btn_primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn_outline {
+  background: #e5e5e5;
+  color: rgb(0, 0, 0);
+}
+
+.btn_outline:hover {
+  background: #cecfd1;
+}
+
+.btn_primary {
+  background: #1f3197;
+  border: none;
+  color: #ffffff;
+}
+
+.btn_primary:hover {
+  background: #112597;
+}
+
+/* Two Columns Grid */
+.two_columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .two_columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Card */
+.card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.card_title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.card_title{
+  color: #1f3197;
+  flex-shrink: 0;
+}
+
+.title_principais_funcionalidades,
+.tecnologias_utilizadas {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* Features List */
+.ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #54565a;
+}
+
+.cirlce_check {
+  color: #1f3197;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+/* Tech List */
+.tech_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech_badge {
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border: 1px solid #30363d28;
+  border-radius: 0.5rem;
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tech_badge:hover {
+  border-color: #1f3197;
+  color: #1f3197;
+}
+
+/* Sobre o Projeto */
+.container_sobre_projeto {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.title_sobre_projeto {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.section_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title_visao_geral {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: rgb(24, 24, 24);
+  margin-bottom: 0.75rem;
+}
+
+/* CTA Footer */
+.cta_footer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cta_description {
+  color: #3f4042;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.btn_footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 1px solid #374151;
+  color: rgb(0, 0, 0);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_footer:hover {
+  border-color: #1f3197;
+  background: #1f319728;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project_title {
+    font-size: 2rem;
+  }
+
+  .project_subtitle {
+    font-size: 1.125rem;
+  }
+
+  .container_sobre_projeto {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .project_page {
+    padding: 4rem 0.5rem 3rem;
+  }
+
+  .project_title {
+    font-size: 1.75rem;
+  }
+
+  .action_buttons {
+    flex-direction: column;
+  }
+
+  .btn_outline,
+  .btn_primary {
+    width: 100%;
+    justify-content: center;
+  }
+}

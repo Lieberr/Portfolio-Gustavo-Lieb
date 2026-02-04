@@ -10,6 +10,8 @@ import { LuExternalLink } from "react-icons/lu";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { FaRegStar } from "react-icons/fa";
 import { HiOutlineCube } from "react-icons/hi";
+import { SiMusicbrainz } from "react-icons/si";
+
 
 import styles from "../styles/ProjectDetails.module.css"
 
@@ -72,14 +74,23 @@ const ProjectDetailsPage = () => {
                     Voltar para projetos
                 </motion.button>
 
-                {/*BADGE*/}
+                
 
-            <motion.div
-            initial={{opacity: 0, y: 20}}
-            animate={{opacity: 1, y: 0}}
-            className={styles.category}>
-                <span>{project.badge}</span>
-            </motion.div>
+                {/*ICON E BADGE*/}
+
+                <motion.div
+                className={styles.project_header}
+                initial={{opacity: 0, y: 20}}
+                animate={{opacity: 1, y: 0}}>
+                    <div className={styles.icon_project}>
+                        <GiProcessor size={32} />
+                    </div>
+
+                    <div className={styles.category}>
+                        <span>{project.badge}</span>
+                    </div>
+                </motion.div>
+
 
             {/*Titulo*/}
             <motion.h1
@@ -152,8 +163,10 @@ const ProjectDetailsPage = () => {
                 transition={{delay: 0.5}}
                 className={styles.card}>
                     <div className={styles.card_title}>
-                        <FaRegStar size={20} color="black"/>
-                        <h2 className={styles.title_principais_funcionalidades}>
+                        <FaRegStar size={35}/>
+                        <h2
+                        style={{color: 'black', fontSize: '25px'}}
+                        className={styles.title_principais_funcionalidades}>
                             Principais Funcionalidades
                         </h2>
                     </div>
@@ -175,8 +188,9 @@ const ProjectDetailsPage = () => {
                 transition={{delay: 0.6}}
                 className={styles.card}>
                     <div className={styles.card_title}>
-                        <HiOutlineCube size={20}/>
-                        <h2 className={styles.tecnologias_utilizadas}>
+                        <HiOutlineCube size={35}/>
+                        <h2
+                        style={{color: 'black', fontSize: '25px'}} className={styles.tecnologias_utilizadas}>
                             Tecnologias Utilizadas
                         </h2>
                     </div>
@@ -192,6 +206,62 @@ const ProjectDetailsPage = () => {
 
             </div>
             {/*Sobre projeto*/}
+
+            <motion.div
+            className={styles.container_sobre_projeto}
+            initial={{opacity: 0, y: 20}}
+            animate={{opacity: 1, y: 0}}
+            transition={{delay: 0.7}}>
+                <div className={styles.card_title}>
+                    <SiMusicbrainz size={35} />
+                    <h2 className={styles.title_sobre_projeto}>Sobre o Projeto</h2>
+                </div>
+
+                <div className={styles.section_content}>
+                    <div>
+                        <h3 className={styles.title_visao_geral}>Visão Geral</h3>
+                        <p className={styles.project_description} style={{ marginBottom: 0 }}>
+                            {project.description}
+                        </p>
+                    </div>
+
+                    {project.desafios_solucoes && (
+                        <div>
+                            <h3 className={styles.title_visao_geral}>Desafios e Soluções</h3>
+                            <p className={styles.project_description} style={{marginBottom: 0}}>
+                                {project.desafios_solucoes}
+                            </p>
+                        </div>
+                    )}
+
+                    {project.resultado_impacto && (
+                        <div>
+                            <h3 className={styles.title_visao_geral}>Resultados e Impacto</h3>
+                            <p className={styles.project_description} style={{marginBottom: 0}}>
+                                {project.resultado_impacto}
+                            </p>
+                        </div>
+                    )}
+                </div>
+            </motion.div>
+
+            <motion.div
+            initial={{opacity: 0, y: 20}}
+            animate={{opacity: 1, y: 0}}
+            transition={{delay: 0.8}}
+            className={styles.cta_footer}>
+                <p className={styles.cta_description}>Gostou deste projeto? Confira meus outros trabalhos!</p>
+
+                <Link to="/#projects">
+                        <motion.button
+                        whileHover={{scale: 1.02}}
+                        whileTap={{scale: 0.98}}
+                        className={styles.btn_footer}>
+                            <GoArrowLeft size={18}/>
+                            <span>Ver todos os projetos</span>
+                        </motion.button>
+                </Link>
+            </motion.div>
             </div>
         </div>
         
