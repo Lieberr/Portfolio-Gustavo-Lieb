@@ -72,8 +72,8 @@ const ProjectDetailsPage = () => {
         return(
             <div className={styles.project_page}>
                 <div className={styles.not_found}>
-                    <h1>Projeto não encontrado</h1>
-                    <Link to="/">Voltar para página inicial</Link>
+                    <h1>Project not Found</h1>
+                    <Link to="/">Back to Home Page</Link>
                 </div>
             </div>
         );
@@ -93,7 +93,7 @@ const ProjectDetailsPage = () => {
                 animate={{opacity: 1, x: 0}}
                 className={styles.back_button}>
                     <GoArrowLeft size={20} />
-                    Voltar para projetos
+                    Back to projects
                 </motion.button>
 
                 
@@ -157,7 +157,7 @@ const ProjectDetailsPage = () => {
                     rel="noopener noreferrer"
                     className={styles.btn_outline}>
                         <LuGithub size={18} />
-                        <span>Ver no GitHub</span>
+                        <span>View on github</span>
                     </a>
                 )}
 
@@ -168,7 +168,7 @@ const ProjectDetailsPage = () => {
                     rel="noopener noreferrer"
                     className={styles.btn_primary}>
                         <LuExternalLink size={18} />
-                        <span>Ver Demo ao Vivo</span>
+                        <span>View live demo</span>
                     </a>
                 )}
             </motion.div>
@@ -189,7 +189,7 @@ const ProjectDetailsPage = () => {
                         <h2
                         style={{color: 'black', fontSize: '25px'}}
                         className={styles.title_principais_funcionalidades}>
-                            Principais Funcionalidades
+                            Main Features
                         </h2>
                     </div>
                     <ul className={styles.ul}>
@@ -213,7 +213,7 @@ const ProjectDetailsPage = () => {
                         <HiOutlineCube size={35}/>
                         <h2
                         style={{color: 'black', fontSize: '25px'}} className={styles.tecnologias_utilizadas}>
-                            Tecnologias Utilizadas
+                            Technologies Used
                         </h2>
                     </div>
                     <div className={styles.tech_list}>
@@ -236,12 +236,12 @@ const ProjectDetailsPage = () => {
             transition={{delay: 0.7}}>
                 <div className={styles.card_title}>
                     <SiMusicbrainz size={35} />
-                    <h2 className={styles.title_sobre_projeto}>Sobre o Projeto</h2>
+                    <h2 className={styles.title_sobre_projeto}>About Project</h2>
                 </div>
 
                 <div className={styles.section_content}>
                     <div>
-                        <h3 className={styles.title_visao_geral}>Visão Geral</h3>
+                        <h3 className={styles.title_visao_geral}>Overview</h3>
                         <p className={styles.project_description} style={{ marginBottom: 0 }}>
                             {project.description}
                         </p>
@@ -249,7 +249,7 @@ const ProjectDetailsPage = () => {
 
                     {project.desafios_solucoes && (
                         <div>
-                            <h3 className={styles.title_visao_geral}>Desafios e Soluções</h3>
+                            <h3 className={styles.title_visao_geral}>Challenges and Solutions</h3>
                             <p className={styles.project_description} style={{marginBottom: 0}}>
                                 {project.desafios_solucoes}
                             </p>
@@ -258,7 +258,7 @@ const ProjectDetailsPage = () => {
 
                     {project.resultado_impacto && (
                         <div>
-                            <h3 className={styles.title_visao_geral}>Resultados e Impacto</h3>
+                            <h3 className={styles.title_visao_geral}>Results and Impact</h3>
                             <p className={styles.project_description} style={{marginBottom: 0}}>
                                 {project.resultado_impacto}
                             </p>
@@ -272,7 +272,7 @@ const ProjectDetailsPage = () => {
             animate={{opacity: 1, y: 0}}
             transition={{delay: 0.8}}
             className={styles.cta_footer}>
-                <p className={styles.cta_description}>Gostou deste projeto? Confira meus outros trabalhos!</p>
+                <p className={styles.cta_description}>Did you like this project? Check out my other work!</p>
 
                 
                         <motion.button
@@ -281,7 +281,7 @@ const ProjectDetailsPage = () => {
                         whileTap={{scale: 0.98}}
                         className={styles.btn_footer}>
                             <GoArrowLeft size={18}/>
-                            <span>Ver todos os projetos</span>
+                            <span>See all projects</span>
                         </motion.button>
                 
             </motion.div>

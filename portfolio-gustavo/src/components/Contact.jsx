@@ -74,7 +74,7 @@ const Contact = () => {
                 className="contact-header">
                     <h2 className="title-lets-talk">Let's <span>Talk</span> </h2>
                     <p>
-                        Vamos conversar sobre seu proximo projeto
+                        Let's talk about your next project.
                     </p>
                 </motion.div>
 
@@ -91,7 +91,7 @@ const Contact = () => {
                     transition={{duration: 0.6}}>
                         <div>
                             <h3 className="title-contact-info">Contact Information</h3>
-                            <p className="p-contact-info">Sinta-se à vontade para entrar em contato através de qualquer um dos canais abaixo.</p>
+                            <p className="p-contact-info">Feel free to contact us through any of the channels below.</p>
 
                             {/*Card*/}
 
@@ -121,7 +121,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="contact-label">Status</p>
-                                    <p className="contact-value">Aberto para novos projetos e colaborações</p>
+                                    <p className="contact-value">Open to new Projects and Collaborations</p>
                                 </div>
                             </div>
                         </div>
@@ -146,8 +146,8 @@ const Contact = () => {
                             <div style={{display: "flex", gap: "10px"}}>
                                 <GoLightBulb size={35} color="#1f3197" />
                                 <div>
-                                    <h4>Interessado em colaboração?</h4>
-                                    <p style={{fontSize: '15px'}}>Estou sempre aberto para discutir projetos interessantes, oportunidades de trabalho ou simplesmente trocar ideias sobre tecnologia.</p>
+                                    <h4>Interested in collaborating?</h4>
+                                    <p style={{fontSize: '15px'}}>I'm always open to discussing interesting projects, job opportunities, or simply exchanging ideas about technology.</p>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@ const Contact = () => {
                     viewport={{once: true}}
                     transition={{duration: 0.6}}>
                         <h3 className="title-contact-message">Send a Message</h3>
-                        <p className="p-contact-message">Preencha o formulário abaixo e eu retornarei o mais breve possível.</p>
+                        <p className="p-contact-message">Please fill out the form below and I will get back to you as soon as possible..</p>
 
                         <form onSubmit={handleSubmit} className="form-contact">
                             <div>

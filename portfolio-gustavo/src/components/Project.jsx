@@ -58,7 +58,7 @@ const Project = () => {
                         </h2>
 
                         <p className="projects-subtitle">
-                            Soluções que desenvolvi para resolver problemas reais
+                            Solutions I developed to solve real problems.
                         </p>
 
                     </motion.div>
@@ -176,7 +176,7 @@ const Project = () => {
                                     to={`projects/${project.id}`}
                                     className="btn btn-saiba-mais">                                
                                             <RiInformationLine size={14}/>
-                                            Saiba Mais
+                                            Looking more
                                     </MotionLink>
 
                                 </div>

@@ -9,27 +9,27 @@ const About = () => {
     const highlights = [
         {
             icon: FaCode,
-            title: 'Código Limpo',
-            description: 'Escrevo código limpo, testável e de fãcil manutenção'
+            title: 'Clean Code',
+            description: 'I write clean, testable, and easily maintainable code',
         },
 
         {
             icon: FaRegLightbulb,
-            title: 'Soluções Criativas',
-            description: 'Trasnformo problemas complexos em grandes soluções'
+            title: 'Creative Solutions',
+            description: 'I transform complex problems into great solutions'
         },
 
         {
             icon: IoRocketOutline,
-            title: 'Perfomace',
-            description: 'Focado em criar aplicações rápidas e otimizadas'
+            title: 'Perfomance',
+            description: 'Focused on creating fast and optimized applications',
 
         },
 
         {
             icon: BsPeople,
-            title: 'Trabalho em equipe',
-            description: 'Comunicativo e Colaborativo em ambientes ágeis'
+            title: 'Teamwork',
+            description: 'Communicative and Collaborative in Agile Environments',
         }
     ]
 
@@ -40,7 +40,7 @@ const About = () => {
                 {/*Header*/}
 
                 <div className="sobre-header">
-                    <h2>Sobre Mim</h2>
+                    <h2>About Me</h2>
                     <div className="sobre-underline"></div>
                 </div>
 
@@ -50,20 +50,17 @@ const About = () => {
                     {/*Texto*/}
                     <div className="sobre-text">
                         <p>
-                            Sou um desenvolvedor full stack com paixão por criar aplicações web
-                            modernas e escaláveis, transformando ideias em produtos digitais.
+                           I am a full-stack developer with a passion for creating modern and scalable web applications, transforming ideas into digital products.
                         </p>
 
 
                         <p>
-                            Trabalho principalmente com React, Flask e APIs, sempre buscando
-                            boas práticas e código limpo.
+                            I work primarily with React, Flask, and APIs, always striving for best practices and clean code.
                         </p>
 
 
                         <p>
-                            Gosto de estudar novas tecnologias, construir projetos próprios e
-                             evoluir constantemente como desenvolvedor.
+                            I enjoy studying new technologies, building my own projects, and constantly evolving as a developer.
                         </p>
 
 
@@ -73,7 +70,7 @@ const About = () => {
                             <span className="quote-icon">"</span>
                             <div>
                                 <p className="quote-text">
-                                 A única maneira de fazer um excelente trabalho é amar o que você faz.
+                                    The only way to do great work is to love what you do.
                                 </p>
                                 <span className="quote-autor">— Steve Jobs</span>
                             </div>

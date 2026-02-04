@@ -149,9 +149,9 @@ const Footer = () => {
                             rel=""><FaInstagram color="black" size={22} /></motion.a>
                         </div>
                         <p className="collab">
-                            Sempre aberto para{' '}
-                            <span className="collab-span">novos projetos</span> e{' '}
-                            <span className="collab-span">colaborações</span>.
+                            Always open to{' '}
+                            <span className="collab-span">new Projects</span> and{' '}
+                            <span className="collab-span">collaborations</span>.
                         </p>
                     </div>
                 </div>

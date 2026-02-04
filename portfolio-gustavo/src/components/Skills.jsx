@@ -72,7 +72,7 @@ const Skills = () => {
                         <span className="highlight">Skills</span> & Competencies
                     </h2>
 
-                    <p className="skills-subtitle">Tecnologias e skills que domino</p>
+                    <p className="skills-subtitle">Technologies and skills I master</p>
                     
                 </motion.div>
 
@@ -142,7 +142,7 @@ const Skills = () => {
                 viewport={{once: true}}
                 transition={{duration: 0.6}}>
                     <p>
-                        Interessado em colaborar ou aprender mais sobre minha experiência?
+                        Interested in collaborating or learning more about my experience?
                     </p>
 
                     <motion.a
@@ -150,7 +150,7 @@ const Skills = () => {
                     className="skills-btn"
                     whileHover={{scale: 1.02}}
                     whileTap={{scale: 0.98}}>
-                        Entre em contato
+                        Get in Touch
                     </motion.a>
                 </motion.div>
 

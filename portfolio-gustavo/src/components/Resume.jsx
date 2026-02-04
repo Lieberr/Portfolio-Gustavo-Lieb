@@ -50,7 +50,7 @@ const Resume = () => {
                         My <span className="highlight">Resume</span>
                     </h2>
                     <p className="subtitle-resume">
-                        Escolha entre meu currículo padrão (disponível em PT e EN) ou minha versão internacional otimizada para o mercado global.
+                        Choose between my standard resume (available in Portuguese and English) or my international version optimized for the global market.
                     </p>
                 </motion.div>
 
@@ -92,7 +92,7 @@ const Resume = () => {
 
                         </div>
 
-                        <p className="resume-description">Versão completa e detalhada do meu currículo, com background profissional, projetos e habilidades técnicas.</p>
+                        <p className="resume-description">A complete and detailed version of my resume, including professional background, projects, and technical skills.</p>
 
 
                         {/*Language Switch*/}
@@ -174,7 +174,7 @@ const Resume = () => {
                             </div>
 
                             <p className="resume-description">
-                                Versão otimizada para o mercado global, especialmente adaptada seguindo padrões internacionais de currículo.
+                                Optimized version for the global market, specially adapted to follow international curriculum standards
                             </p>
 
                             <motion.a
@@ -203,8 +203,8 @@ const Resume = () => {
                 viewport={{once: true}}
                 transition={{duration: 0.6, delay: 0.3}}>
                     <p>
-                        💡 Currículos podem estar desatualizados. Para informações mais recentes sobre minha experiência e projetos,{' '}
-                        <a onClick={() => scrollToSection('contact')} style={{fontWeight: '600'}}>entre em contato.</a>
+                       💡 Resumes may be outdated. For more recent information about my experience and projects,{' '}
+                        <a onClick={() => scrollToSection('contact')} style={{fontWeight: '600'}}>get in contact.</a>
                     </p>
                 </motion.div>
             </div>

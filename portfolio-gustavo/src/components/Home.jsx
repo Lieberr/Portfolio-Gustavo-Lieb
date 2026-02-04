@@ -52,7 +52,7 @@ const Home = () => {
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay: 0.5}}>
-                        Apaixonado por Frontend, Banco de dados & backend. Transformando ideias em sistemas inteligentes que impactam milhares de usuários.
+                       Passionate about frontend, databases, and backend. Transforming ideas into intelligent systems that have impacted thousands of users.
                     </motion.p>
 
                     {/*btns*/}
@@ -66,7 +66,7 @@ const Home = () => {
                         className={styles.btn_outline}
                         whileHover={{scale: 1.03}}
                         whileTap={{scale: 0.97}}>
-                            Ver Projetos
+                            See Projects
                         </motion.button>
 
                         <motion.button
@@ -74,7 +74,7 @@ const Home = () => {
                         className={styles.btn_primary}
                         whileHover={{scale: 1.03}}
                         whileTap={{scale: 0.97}}>
-                            Entre em Contato
+                            Get in Touch
                         </motion.button>
                     </motion.div>
 

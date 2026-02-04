@@ -98,7 +98,7 @@ const Header = () => {
                             {menuItens.map((item) => (
                                 <button
                                 key={item.id}
-                                onClick={() => scrollToSection(item.id)}
+                                onClick={() => goToSection(item.id)}
                                 className="mobile_menu_item">
                                     {item.label}
                                 </button>
