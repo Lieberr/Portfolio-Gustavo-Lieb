@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { FaRegFileAlt } from "react-icons/fa";
 import { FaRegFilePdf } from "react-icons/fa";
 import { RiGlobalLine } from "react-icons/ri";

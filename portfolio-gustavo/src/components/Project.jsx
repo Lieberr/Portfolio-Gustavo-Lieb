@@ -3,8 +3,8 @@ import { GiProcessor } from "react-icons/gi";
 import { LuGithub } from "react-icons/lu";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RiInformationLine } from "react-icons/ri";
-import { motion } from "motion/react";
-import { Link } from "react-router";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 

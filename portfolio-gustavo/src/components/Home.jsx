@@ -2,7 +2,7 @@ import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { MdMailOutline } from "react-icons/md";
 import { FaArrowDown } from "react-icons/fa6";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import styles from "../styles/Home.module.css"
 
 

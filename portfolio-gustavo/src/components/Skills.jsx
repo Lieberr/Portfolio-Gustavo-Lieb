@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { IoCode } from "react-icons/io5";
 import { IoMdSettings } from "react-icons/io";
 import { FiDatabase } from "react-icons/fi";

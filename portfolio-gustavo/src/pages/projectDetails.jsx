@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router";
-import { Link } from "react-router";
-import { useNavigate, useLocation } from "react-router";
-import { motion } from "motion/react";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 import { GoArrowLeft } from "react-icons/go";
 import { GiProcessor } from "react-icons/gi";
 import { LuGithub } from "react-icons/lu";

@@ -4,7 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FiDownload } from 'react-icons/fi';
 import { IoArrowUp } from "react-icons/io5";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import Toast  from "./Toast";
 import { useState } from "react";
 
