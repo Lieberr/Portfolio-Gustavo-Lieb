@@ -6,7 +6,9 @@ import { FiDownload } from 'react-icons/fi';
 import { IoArrowUp } from "react-icons/io5";
 import { motion } from "motion/react";
 import Toast  from "./Toast";
-import { use, useState } from "react";
+import { useState } from "react";
+
+import { useNavigate, useLocation } from "react-router";
 
 
 
@@ -39,6 +41,27 @@ const Footer = () => {
         }
     }
 
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const goToSection = (sectionId) => {
+        if (location.pathname !== '/'){
+            navigate('/');
+
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if(element) {
+                    element.scrollIntoView({behavior: 'smooth'});
+                }
+            }, 100)
+        } else{
+            const element = document.getElementById(sectionId);
+            if(element){
+                element.scrollIntoView({behavior: 'smooth'})
+            }
+        }
+    }
+
     return ( 
         <footer className="footer">
             <div className="footer-container">
@@ -59,31 +82,31 @@ const Footer = () => {
                         <h3 className="section-title">Quick Navigation</h3>
                         <ul className="nav-list">
                             <li>
-                                <button onClick={() => scrollToSection('about')}>
+                                <button onClick={() => goToSection('about')}>
                                     About
                                 </button>
                             </li>
 
                             <li>
-                                <button onClick={() => scrollToSection('skills')}>
+                                <button onClick={() => goToSection('skills')}>
                                     Skills
                                 </button>
                             </li>
 
                             <li>
-                                <button onClick={() => scrollToSection('projects')}>
+                                <button onClick={() => goToSection('projects')}>
                                     Projects
                                 </button>
                             </li>
 
                             <li>
-                                <button onClick={() => scrollToSection('resume')}>
+                                <button onClick={() => goToSection('resume')}>
                                     My Resume
                                 </button>
                             </li>
 
                             <li>
-                                <button onClick={() => scrollToSection('contact')}>
+                                <button onClick={() => goToSection('contact')}>
                                     Contact
                                 </button>
                             </li>
