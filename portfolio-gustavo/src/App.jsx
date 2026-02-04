@@ -1,4 +1,4 @@
-import HomePage from "./pages/homePage";
+import HomePage from "./pages/HomePage";
 import {Routes, Route} from "react-router"
 import Header from "./components/Header";
 import ProjectDetailsPage from "./pages/ProjectDetails";
