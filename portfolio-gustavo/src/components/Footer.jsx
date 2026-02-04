@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Toast  from "./Toast";
 import { useState } from "react";
 
-import { useNavigate, useLocation } from "react-router";
+import { useNavigate, useLocation } from "react-router-dom";
 
 
 
