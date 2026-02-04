@@ -1,8 +1,8 @@
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/homePage";
 import {Routes, Route} from "react-router"
 import Header from "./components/Header";
-import ProjectDetailsPage from "./pages/ProjectDetails";
-import PageNotFound from "./pages/NotFound";
+import ProjectDetailsPage from "./pages/projectDetails";
+import PageNotFound from "./pages/notFound";
 import Footer from "./components/Footer"
 
 const App = () => {
