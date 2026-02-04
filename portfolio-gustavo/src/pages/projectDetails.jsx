@@ -52,11 +52,16 @@ const ProjectDetailsPage = () => {
     useEffect(() => { 
         const fetchProject = async () => {
             try{
-                const res = await fetch(`/api/projects/${id}`);
+                const res = await fetch('/data/db.json');
                 if (!res.ok) throw new Error('Failed to fetch Project');
                 const data = await res.json();
-                console.log(data);
-                setProject(data);
+
+                const projectFound = data.projects.find(
+                    p => p.id === Number(id)
+                );
+
+                console.log(projectFound);
+                setProject(projectFound);
             } catch (err){
                 setError(err.message);
                 console.log(err);

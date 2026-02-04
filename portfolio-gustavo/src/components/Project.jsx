@@ -18,11 +18,11 @@ const Project = () => {
     useEffect(() => { 
         const fetchProjects = async () => {
             try {
-                const res = await fetch('/api/projects');
+                const res = await fetch('/data/db.json');
                 if(!res.ok) throw new Error("Failed to fetch Projects");
                 const data = await res.json();
                 console.log(data)
-                setProjects(data)
+                setProjects(data.projects)
             } catch (err) {
                 setError(err.message)
                 console.log(err)
