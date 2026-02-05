@@ -314,12 +314,15 @@ body.dark .footer-bottom p{
 }
 
 .contact-container{
-    max-width: 1280px;
+max-width: 1280px;
     margin: 0 auto;
-    padding-left: max(1rem, env(safe-area-inset-left));
-    padding-right: max(1rem, env(safe-area-inset-right));
+    /* Substitua os paddings complexos por um padrão seguro */
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem;
     width: 100%;
     box-sizing: border-box;
+    /* Impede que qualquer coisa que "vaze" crie barra de rolagem lateral */
+    overflow-x: hidden;
 }
 .contact-header{
     text-align: center;

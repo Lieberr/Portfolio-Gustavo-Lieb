@@ -85,8 +85,8 @@ const Contact = () => {
 
                     <motion.div
                     className="contact-left"
-                    initial={{opacity: 0, x: -30}}
-                    whileInView={{opacity: 1, x: 0}}
+                    initial={{opacity: 0, y: 20}}
+                    whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
                     transition={{duration: 0.6}}>
                         <div>
@@ -158,8 +158,8 @@ const Contact = () => {
                     {/*Right side*/}
 
                     <motion.div
-                    initial={{opacity: 0, x: 30}}
-                    whileInView={{opacity: 1, x: 0}}
+                    initial={{opacity: 0, y: 20}}
+                    whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
                     transition={{duration: 0.6}}>
                         <h3 className="title-contact-message">Send a Message</h3>
