@@ -9,6 +9,16 @@ import { FiBox } from "react-icons/fi";
 
 const Skills = () => {
 
+
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element){
+            element.scrollIntoView({behavior: 'smooth'})
+        }
+    }
+
+
+
     const skillCategories = [
         {
             title: 'Backend Development',
@@ -146,7 +156,7 @@ const Skills = () => {
                     </p>
 
                     <motion.a
-                    href=""
+                    onClick={() => scrollToSection('contact')}
                     className="skills-btn"
                     whileHover={{scale: 1.02}}
                     whileTap={{scale: 0.98}}>
