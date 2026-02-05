@@ -474,7 +474,7 @@ color: #e5e7eb;
 .container-social-links{
     display: flex;
     gap: 16px;
-    flex-wrap: wrap;
+     grid-template-columns: repeat(2, minmax(140px, 1fr));
 }
 
 .title-social{
@@ -483,6 +483,9 @@ color: #e5e7eb;
 }
 
 .container-social-links a{
+    
+  width: 100%;
+  justify-content: center;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -590,6 +593,13 @@ textarea::placeholder{
 .contact-btn:hover{
     background: #182675;
     }
+
+
+    @media (max-width: 480px) {
+  .container-social-links {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 

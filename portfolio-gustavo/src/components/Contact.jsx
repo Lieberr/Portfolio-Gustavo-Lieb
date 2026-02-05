@@ -133,8 +133,8 @@ const Contact = () => {
                             <h3 className="title-social">Connect with me</h3>
 
                             <div className="container-social-links">
-                                <a href="https://github.com/Lieberr" target="_blank"><RiGithubLine size={20}/> GitHub </a>
-                                <a href="https://www.linkedin.com/in/gustavo-lieb-figueira/" target="_blank"><SlSocialLinkedin size={20} /> LinkedIn</a>
+                                <a href="https://github.com/Lieberr" target="_blank"><RiGithubLine size={22}/> GitHub </a>
+                                <a href="https://www.linkedin.com/in/gustavo-lieb-figueira/" target="_blank"><SlSocialLinkedin size={22} /> LinkedIn</a>
 
                             </div>
 
