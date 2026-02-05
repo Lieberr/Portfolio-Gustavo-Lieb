@@ -1649,6 +1649,7 @@ textarea::placeholder{
 /* Header Container */
 .header {
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -1684,6 +1685,7 @@ textarea::placeholder{
 /* Nav Content */
 .nav_content {
   display: flex;
+    max-width: 80rem;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
@@ -1756,6 +1758,7 @@ textarea::placeholder{
 /* Mobile Menu Button */
 .mobile_menu_button {
   padding: 0.5rem;
+  min-width: 44px;
   color: rgb(55, 65, 81);
   background: transparent;
   border: none;
@@ -1805,5 +1808,10 @@ textarea::placeholder{
 .mobile_menu_item:hover {
   color: #1f3197;
   background-color: rgb(243, 244, 246);
+}
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
 }
 
