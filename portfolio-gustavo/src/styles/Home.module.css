@@ -1,4 +1,14 @@
 /* Hero Section */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
 .home_section {
   min-height: 100vh;
   display: flex;

@@ -1,4 +1,15 @@
 /* Project Page Container */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
 .project_page {
   min-height: 100vh;
   background: linear-gradient(to bottom, #f9fafb, #ffffff);
