@@ -45,7 +45,7 @@ const Skills = () => {
         },
 
         {
-            title: 'Fontend',
+            title: 'Frontend',
             icon: FiBox,
             skills: [
                 {name: 'React JS', level: 94},
