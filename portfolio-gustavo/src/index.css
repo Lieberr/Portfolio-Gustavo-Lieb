@@ -287,6 +287,8 @@ body.dark .footer-bottom p{
 .contact-container{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 .contact-header{
     text-align: center;
@@ -331,6 +333,11 @@ body.dark .footer-bottom p{
     .contact-grid{
         grid-template-columns: repeat(2, 1fr);
     }
+}
+@media (max-width: 768px){
+  .contact-container{
+    padding: 0 1.25rem;
+  }
 }
 
 .title-contact-info,
