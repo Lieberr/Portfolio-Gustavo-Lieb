@@ -8,14 +8,9 @@ body{
     font-style: normal;
 }
 
+
 *, *::before, *::after {
   box-sizing: border-box;
-}
-
-.sobre-image-wrapper,
-.projects-section,
-.contact-section {
-  overflow-x: hidden;
 }
 
 
