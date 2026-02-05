@@ -405,7 +405,14 @@ max-width: 1280px;
     border: 1px solid #e5e7eb;
     border-radius: 0.75rem;
     margin-bottom: 24px;
+    min-width: 0;
     
+}
+
+.contact-card > div:last-child {
+    /* Garante que a div do texto não tente ser maior que o card */
+    min-width: 0;
+    flex: 1;
 }
 
 .dark .contact-card{
@@ -440,6 +447,8 @@ max-width: 1280px;
     padding-top: 9px;
     display: block;
     font-size: 15px;
+    word-break: break-all; 
+    overflow-wrap: anywhere;
 }
 
 .dark .contact-value {
@@ -465,6 +474,7 @@ color: #e5e7eb;
 .container-social-links{
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .title-social{
