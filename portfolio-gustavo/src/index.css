@@ -273,6 +273,17 @@ body.dark .footer-bottom p{
 
 /*Contact*/
 
+.form-contact > div {
+  width: 100%;
+}
+
+.form-contact input,
+.form-contact textarea,
+.contact-btn {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 
 .contact-section{
     padding: 5rem 1rem;
@@ -287,7 +298,9 @@ body.dark .footer-bottom p{
 .contact-container{
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+    width: 100%;
     box-sizing: border-box;
 }
 .contact-header{
@@ -336,7 +349,7 @@ body.dark .footer-bottom p{
 }
 @media (max-width: 768px){
   .contact-container{
-    padding: 0 1.25rem;
+    padding: 1.25rem 0
   }
 }
 
