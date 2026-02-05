@@ -367,7 +367,7 @@ body.dark .footer-bottom p{
 }
 @media (max-width: 768px){
   .contact-container{
-    padding: 1.25rem 0
+    padding: 1.25rem 1rem;
   }
 }
 
@@ -1361,6 +1361,8 @@ textarea::placeholder{
 .sobre-section{
     padding: 5rem 1rem;
     background: rgba(0,0,0,0.02);
+    overflow: hidden;
+    position: relative;
 }
 
 .sobre-container{
@@ -1687,7 +1689,6 @@ textarea::placeholder{
 /* Header Container */
 .header {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
   right: 0;
