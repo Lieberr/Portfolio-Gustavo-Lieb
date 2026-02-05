@@ -291,6 +291,7 @@ body.dark .footer-bottom p{
 
 .form-contact > div {
   width: 100%;
+  max-width: 100%;
 }
 
 .form-contact input,
@@ -315,8 +316,10 @@ body.dark .footer-bottom p{
 max-width: 1280px;
     margin: 0 auto;
     /* Substitua os paddings complexos por um padrão seguro */
-    padding-left: 1.5rem; 
-    padding-right: 1.5rem;
+    padding-left: 16px; 
+    padding-right: 16px;
+    padding-left: auto;
+    padding-right: auto;
     width: 100%;
     box-sizing: border-box;
     /* Impede que qualquer coisa que "vaze" crie barra de rolagem lateral */
@@ -391,6 +394,7 @@ max-width: 1280px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    min-width: 0
 }
 
 .contact-card{
