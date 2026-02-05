@@ -8,6 +8,19 @@ body{
     font-style: normal;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.sobre-image-wrapper,
+.projects-section,
+.contact-section {
+  overflow-x: hidden;
+}
+
+
+
+
 .app-container {
   display: flex;
   flex-direction: column;
