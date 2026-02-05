@@ -146,6 +146,8 @@
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
+  width: auto;
+  max-width: none;
 }
 
 
@@ -358,8 +360,3 @@
   }
 }
 
-.action_buttons a {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
