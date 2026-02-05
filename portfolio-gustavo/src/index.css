@@ -316,15 +316,11 @@ body.dark .footer-bottom p{
 max-width: 1280px;
     margin: 0 auto;
     /* Substitua os paddings complexos por um padrão seguro */
-    padding-left: 16px; 
-    padding-right: 16px;
-    padding-left: auto;
-    padding-right: auto;
+    padding: 0 16px;
     width: 100%;
     box-sizing: border-box;
     /* Impede que qualquer coisa que "vaze" crie barra de rolagem lateral */
-    overflow-x: hidden;
-    overflow: hidden;
+
 }
 .contact-header{
     text-align: center;
@@ -474,6 +470,7 @@ color: #e5e7eb;
 .container-social-links{
     display: flex;
     gap: 16px;
+    width: 100%;
      grid-template-columns: repeat(2, minmax(140px, 1fr));
 }
 
