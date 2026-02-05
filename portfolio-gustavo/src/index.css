@@ -1502,7 +1502,7 @@ textarea::placeholder{
 
 @media (max-width: 600px){
     .sobre-highlights{
-        grid-template-columns: 1f;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1663,6 +1663,8 @@ textarea::placeholder{
 /* Nav Container */
 .nav {
   max-width: 80rem;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0 1rem;
 }

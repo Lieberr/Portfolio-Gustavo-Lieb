@@ -93,7 +93,7 @@ const Header = () => {
 
 
                 {mobileMenu && (
-                    <div className="monile_menu">
+                    <div className="mobile_menu">
                         <div className="mobile_menu_content">
                             {menuItens.map((item) => (
                                 <button
