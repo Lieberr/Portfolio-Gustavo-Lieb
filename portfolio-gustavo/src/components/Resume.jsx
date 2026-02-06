@@ -120,7 +120,7 @@ const Resume = () => {
                         className="dowload-btn"
                         whileHover={{scale: 1.02}}
                         whileTap={{scale: 0.98}}>
-                            <FiDownload /> Dowload PDF
+                            <FiDownload /> Download PDF
                         </motion.a>
                         </div>
                     </motion.div>
@@ -182,7 +182,7 @@ const Resume = () => {
                             className="dowload-btn"
                             whileHover={{scale: 1.02}}
                             whileTap={{scale: 0.98}}>
-                                <FiDownload /> Dowload PDF
+                                <FiDownload /> Download PDF
                             </motion.a>
                         </div>
                     </motion.div>

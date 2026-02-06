@@ -157,7 +157,7 @@ const Footer = () => {
                 </div>
                     {/*Dowloads*/}
                     <div className="dowloads">
-                        <h4 className="dowload-title">Dowloads</h4>
+                        <h4 className="dowload-title">Downloads</h4>
                         <div className="dowloads-link">
                             <a href="/cv-gustavo.pdf" download="CV-GustavoLieb.pdf" className="dowload-btn"> <FiDownload className="dowload-icon-footer" color="black" /> Standard Resume (PT)</a>
                             <span className="span-separator-dowload">•</span>
