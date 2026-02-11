@@ -123,7 +123,7 @@ const Footer = () => {
                             href="https://github.com/Lieberr"
                             target="_blank"
                             className="icon"
-                            rel=""><RiGithubLine color="black" size={22} /></motion.a>
+                            rel=""><RiGithubLine size={22} /></motion.a>
 
 
                             <motion.a 
@@ -131,7 +131,7 @@ const Footer = () => {
                             href="https://www.linkedin.com/in/gustavo-lieb-figueira/"
                             target="_blank"
                             className="icon"
-                            rel=""><SlSocialLinkedin color="black" size={22} /></motion.a>
+                            rel=""><SlSocialLinkedin size={22} /></motion.a>
 
 
                             <motion.a 
@@ -139,14 +139,14 @@ const Footer = () => {
                             href="mailto:gustavoliebfigueira@gmail.com"
                             target="_blank"
                             className="icon"
-                            rel=""><MdOutlineMail color="black" size={22} /></motion.a>
+                            rel=""><MdOutlineMail  size={22} /></motion.a>
 
                             <motion.a 
                             whileHover={{ scale: 1.03 }}
                             href="https://www.instagram.com/gustavo.lieb/"
                             target="_blank"
                             className="icon"
-                            rel=""><FaInstagram color="black" size={22} /></motion.a>
+                            rel=""><FaInstagram  size={22} /></motion.a>
                         </div>
                         <p className="collab">
                             Always open to{' '}
@@ -159,11 +159,11 @@ const Footer = () => {
                     <div className="dowloads">
                         <h4 className="dowload-title">Downloads</h4>
                         <div className="dowloads-link">
-                            <a href="/cv-gustavo.pdf" download="CV-GustavoLieb.pdf" className="dowload-btn"> <FiDownload className="dowload-icon-footer" color="black" /> Standard Resume (PT)</a>
+                            <a href="/cv-gustavo.pdf" download="CV-GustavoLieb.pdf" className="dowload-btn"> <FiDownload className="dowload-icon-footer"  /> Standard Resume (PT)</a>
                             <span className="span-separator-dowload">•</span>
-                            <a href="/cv-gustavo-ingles.pdf" download="CV-GustavoLieb-English.pdf" className="dowload-btn"> <FiDownload className="dowload-icon-footer" color="black" /> Standard Resume (EN)</a>
+                            <a href="/cv-gustavo-ingles.pdf" download="CV-GustavoLieb-English.pdf" className="dowload-btn"> <FiDownload className="dowload-icon-footer"  /> Standard Resume (EN)</a>
                             <span className="span-separator-dowload">•</span>
-                            <a onClick={handleInternationalCV} className="dowload-btn"> <FiDownload className="dowload-icon-footer" color="black" /> International Resume</a>
+                            <a onClick={handleInternationalCV} className="dowload-btn"> <FiDownload className="dowload-icon-footer"  /> International Resume</a>
                         </div>
                     </div>
 

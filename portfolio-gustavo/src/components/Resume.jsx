@@ -87,7 +87,7 @@ const Resume = () => {
                         <div className="resume-preview">
 
                             <div className="preview-container">
-                                <PiReadCvLogo color="gray" size={200} />
+                                <PiReadCvLogo className="icon-pdf" size={200} />
                             </div>
 
                         </div>
@@ -167,7 +167,7 @@ const Resume = () => {
                                     
 
                                         <div className="preview-footer" >
-                                            <RiGlobalLine size={40} color="gray" />
+                                            <RiGlobalLine size={40} className="icon-international" />
                                             <span style={{color: 'gray'}}> International </span>
                                         </div>
                                 </div>

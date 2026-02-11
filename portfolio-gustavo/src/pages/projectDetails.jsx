@@ -192,7 +192,7 @@ const ProjectDetailsPage = () => {
                     <div className={styles.card_title}>
                         <FaRegStar size={35}/>
                         <h2
-                        style={{color: 'black', fontSize: '25px'}}
+                        style={{ fontSize: '25px'}}
                         className={styles.title_principais_funcionalidades}>
                             Main Features
                         </h2>
@@ -217,7 +217,7 @@ const ProjectDetailsPage = () => {
                     <div className={styles.card_title}>
                         <HiOutlineCube size={35}/>
                         <h2
-                        style={{color: 'black', fontSize: '25px'}} className={styles.tecnologias_utilizadas}>
+                        style={{ fontSize: '25px'}} className={styles.tecnologias_utilizadas}>
                             Technologies Used
                         </h2>
                     </div>

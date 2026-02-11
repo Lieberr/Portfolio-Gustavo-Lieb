@@ -8,6 +8,11 @@ export function ThemeProvider({children}){
         setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light') )
     }
 
+    useEffect(() => { 
+        document.documentElement.classList.remove('light', 'dark')
+        document.documentElement.classList.add(theme)
+     }, [theme])
+
     return(
         <ThemeContext.Provider value={{theme, toggleTheme}}>
             {children}

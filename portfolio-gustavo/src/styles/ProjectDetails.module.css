@@ -16,6 +16,10 @@ html, body {
   padding: 6rem 1rem 5rem;
 }
 
+:global(.dark) .project_page{
+  background: linear-gradient(to bottom, #0a0e1a, #0d1117);
+}
+
 
 .project_container {
   max-width: 64rem;
@@ -64,8 +68,12 @@ html, body {
   padding: 0;
 }
 
+:global(.dark) .back_button{
+  color: #99a1af;
+}
+
 .back_button:hover {
-  color: #1f3197;
+  color: #707680;
 }
 
 /* Icon Project */
@@ -83,6 +91,10 @@ html, body {
   background: #1f3197;
   border-radius: 0.75rem;
   margin-bottom: 1.5rem;
+}
+
+:global(.dark) .icon_project{
+  background: #192350;
 }
 
 @media(max-width: 768px){
@@ -113,6 +125,12 @@ html, body {
   margin-left: 1rem;
 }
 
+:global(.dark) .category span{
+  background: rgba(59,130,246,0.15);
+  color: #3b82f6;
+  border: 1px solid rgba(59,130,246,0.4);
+}
+
 /* Title */
 .project_title {
   font-size: 2.5rem;
@@ -120,6 +138,10 @@ html, body {
   margin-bottom: 1rem;
   color: rgb(15, 15, 15);
   line-height: 1.1;
+}
+
+:global(.dark) .project_title{
+  color: #ffffff;
 }
 
 /* Subtitle */
@@ -135,6 +157,10 @@ html, body {
   color: #45484d;
   line-height: 1.7;
   margin-bottom: 2rem;
+}
+
+:global(.dark) .project_description{
+  color: #d1d5dc;
 }
 
 /* Action Buttons */
@@ -203,6 +229,11 @@ html, body {
   padding: 1.5rem;
 }
 
+:global(.dark) .card{
+  background: #151c28;
+  border: 1px solid #354052;
+}
+
 .card_title {
   display: flex;
   align-items: center;
@@ -210,18 +241,28 @@ html, body {
   margin-bottom: 1.5rem;
 }
 
+
 .card_title{
   color: #1f3197;
   flex-shrink: 0;
+}
+
+:global(.dark) .card_title{
+  color: #3b82f6;;
 }
 
 .title_principais_funcionalidades,
 .tecnologias_utilizadas {
   font-size: 1.25rem;
   font-weight: bold;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0;
 }
+
+:global(.dark) .title_principais_funcionalidades, :global(.dark) .tecnologias_utilizadas{
+  color: white;
+}
+
 
 /* Features List */
 .ul {
@@ -240,10 +281,18 @@ html, body {
   color: #54565a;
 }
 
+:global(.dark) .li{
+  color: #d1d5dc;
+}
+
 .cirlce_check {
   color: #1f3197;
   flex-shrink: 0;
   margin-top: 0.125rem;
+}
+
+:global(.dark) .cirlce_check{
+  color: #3b82f6;;;
 }
 
 /* Tech List */
@@ -265,9 +314,20 @@ html, body {
   cursor: default;
 }
 
+:global(.dark) .tech_badge{
+  background: #121a28;
+  color: white;
+  border: 1px solid #354052;
+}
+
 .tech_badge:hover {
   border-color: #1f3197;
   color: #1f3197;
+}
+
+:global(.dark) .tech_badge:hover{
+  border-color: #1f3197;
+   color: white;
 }
 
 /* Sobre o Projeto */
@@ -279,11 +339,20 @@ html, body {
   margin-bottom: 3rem;
 }
 
+:global(.dark) .container_sobre_projeto{
+  background-color: #151c27;
+  border: 1px solid #354052;
+}
+
 .title_sobre_projeto {
   font-size: 25px;
   font-weight: bold;
   color: rgb(0, 0, 0);
   margin: 0;
+}
+
+:global(.dark) .title_sobre_projeto{
+  color: white;
 }
 
 .section_content {
@@ -299,6 +368,14 @@ html, body {
   margin-bottom: 0.75rem;
 }
 
+:global(.dark) .title_visao_geral{
+  color: #ffffff;
+}
+
+:global(.dark) .project_description{
+  color: #d1d5dc;
+}
+
 /* CTA Footer */
 .cta_footer {
   text-align: center;
@@ -309,6 +386,10 @@ html, body {
   color: #3f4042;
   margin-bottom: 1.5rem;
   font-size: 1rem;
+}
+
+:global(.dark) .cta_description{
+  color: #99a1af
 }
 
 .btn_footer {
@@ -323,11 +404,22 @@ html, body {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 17px;
+}
+
+:global(.dark) .btn_footer{
+  background: #0a0e19;
+  color: white;
 }
 
 .btn_footer:hover {
   border-color: #1f3197;
   background: #1f319728;
+}
+
+:global(.dark) .btn_footer:hover{
+  border: 1px solid #374151;
+  background: #bdbdbd0e;
 }
 
 /* Responsive */

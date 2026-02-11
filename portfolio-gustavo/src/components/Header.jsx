@@ -2,6 +2,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import ThemeToggle from "./ThemeToggle";
 
 
 
@@ -72,12 +73,14 @@ const Header = () => {
                                 {item.label}
                             </button>
                         ))}
+                        <ThemeToggle />
                     </div>
 
 
                     {/*Mobile menu*/}
 
                     <div className="mobile_controls">
+                        <ThemeToggle />
                         <button
                         onClick={() => setMobileMenu(!mobileMenu)}
                         className="mobile_menu_button">

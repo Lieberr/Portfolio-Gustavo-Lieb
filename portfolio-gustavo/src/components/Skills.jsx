@@ -121,7 +121,7 @@ const Skills = () => {
                                     {category.skills.map((skill) => (
                                         <div key={skill.name} className="skill-item">
                                             <div className="skill-info">
-                                                <span>{skill.name}</span>
+                                                <span className="skill-name">{skill.name}</span>
                                                 <span className="skill-porcent">
                                                     {skill.level}%
                                                 </span>
